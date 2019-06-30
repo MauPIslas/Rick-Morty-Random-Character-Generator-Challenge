@@ -10,4 +10,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+    
+}
+
+#blockdemyContainer{
+  display: flex;
+  grid-column: 2/4;
+}
+#blockdemyIMG {
+  height: 45px;
+  margin-top: 10px;
 }
