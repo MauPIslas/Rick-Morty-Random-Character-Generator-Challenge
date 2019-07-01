@@ -21,12 +21,19 @@ class ListChars extends React.Component{
 
         }
         return chars.map( (char,i) => 
-        <div key={char.id + 10} >
-            <p key={char.name}>{char.name}</p>
-            <p key={char.id}>{char.id}</p>
-            <a href="#cardScroll">
-            <button key={char} id={i+1} onClick={()=> handleCLick(i)}>view</button>
-            </a>
+        <div key={char.id + 10} className="cardH">
+            <div className="imgCardH">
+                <img key={"key"+ char.id }className="imgCardH"alt={char.name} src= {char.image}></img>
+            </div>
+            <div className="dataCardH">
+                <p className="pCardH"key={char.name}>{char.name}</p>
+                
+            </div>
+            <div className="buttonCardHContainer">
+                <a href="#cardScroll">
+                    <button key={char} id={i+1} className="buttonCardH" onClick={()=> handleCLick(i)}>view</button>
+                </a>
+            </div>
         </div>
             );
     }

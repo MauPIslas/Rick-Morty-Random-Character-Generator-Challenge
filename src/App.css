@@ -1,8 +1,6 @@
 @media only screen and (max-width: 700px) {
 
   #cards{
-    /* margin-top: 1em;
-    margin-bottom: 1em; */
     margin: .5em;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -24,24 +22,18 @@
   #dataCard {
     grid-row: 2/3;
     grid-column: 2/3;
-    /* justify-content: center;
-    display: flex; */
-    background-color: aqua;
     width: 1fr;
     display: block;
   }
+
 }
-
 @media only screen and (min-width: 701px) {
-
-
   #cards {
     margin-top: 1em;
     margin-bottom: 1em;
     display: grid;
     grid-template-columns:  .1fr repeat(4, .5fr) repeat(4,.6fr) .2fr ;
   }
-  
   #imgCard{
     
     grid-column: 1/6;
@@ -57,13 +49,10 @@
     grid-column: 6/10;
     justify-content: center;
     display: flex;
-    /* background-color:rgb(255, 255, 255); */
     width: 1fr;
     display: block;
-    /* box-shadow: rgba(136, 152, 170, 0.15) 0px 0px 2rem 0px; */
+    
   }
-
-
 }
 
 .App {
@@ -83,7 +72,7 @@ scroll-container {
   scroll-behavior: smooth;
 }
 
-#dataCard {
+#dataCard  {
   font-size: 16px;
   font-family: Play,sans-serif;
   background-color:rgb(255, 255, 255);
@@ -116,4 +105,86 @@ scroll-container {
 
 #list{
   margin-bottom: 2em;
+}
+
+#genButton{
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  margin-left: auto;
+  border-radius: 5px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  padding: 0.875rem 2rem;
+  background: linear-gradient(135deg, rgb(48, 206, 231), rgb(130, 101, 252));
+    
+}
+
+#buttonSpace{
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.cardH{
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  width: auto;
+  height: 250px;
+  margin: 1em;  
+  background-color:rgb(255, 255, 255);
+  box-shadow: rgba(136, 152, 170, 0.30) 0px 0px 2rem 0px;
+}
+
+.imgCardH{
+  margin-top: .05em;
+  grid-column: 1/2;
+  width: auto;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.dataCardH{
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  font-size: 25px;
+}
+
+.pCardH{
+  padding-bottom: 2.5em;
+}
+
+.buttonCardH{
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgb(130, 101, 252);
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 0.625rem 2.25rem;
+  border-width: 1px;
+  border-color: rgb(130, 101, 252);
+  margin-bottom: 5em;
+}
+
+.buttonCardHContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
