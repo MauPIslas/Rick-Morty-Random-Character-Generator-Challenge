@@ -4,7 +4,7 @@ import Card from './Card';
 
 class ListChars extends React.Component{
     render(){
-        var chars = this.props.list;
+        let chars = this.props.list;
         const handleCLick = (i) =>{
             ReactDOM.render(<Card   name= {chars[i].name} 
                                     image = {chars[i].image}

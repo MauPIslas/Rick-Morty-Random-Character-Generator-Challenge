@@ -10,9 +10,11 @@ const client = new ApolloClient({
   uri: "https://rickandmortyapi.com/graphql"
 });
 
-function App() {
 
+function App() {
+  
   return (
+    
     <ApolloProvider client= {client}>
       <div className="App">
         <div id="nav">
