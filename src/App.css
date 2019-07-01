@@ -11,3 +11,8 @@
 #main{
   grid-row: 2/3;
 }
+
+scroll-container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}

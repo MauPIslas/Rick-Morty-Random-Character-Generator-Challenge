@@ -24,7 +24,9 @@ class ListChars extends React.Component{
         <div key={char.id + 10} >
             <p key={char.name}>{char.name}</p>
             <p key={char.id}>{char.id}</p>
+            <a href="#cardScroll">
             <button key={char} id={i+1} onClick={()=> handleCLick(i)}>view</button>
+            </a>
         </div>
             );
     }

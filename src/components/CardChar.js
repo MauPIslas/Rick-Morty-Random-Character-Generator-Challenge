@@ -7,9 +7,13 @@ import Card from './Card';
 import ListChars from './ListChars';
 
 
+
+
 let varQ = {"id": 1}
 let characters = [];
 function CardChar({ client }) {
+
+  
     const handleClick= () =>{
     let x = Math.floor((Math.random() * 493) + 1);
     varQ.id = x;
@@ -36,12 +40,16 @@ function CardChar({ client }) {
     })}
     return (
       <div>
-      
+      <scroll-container>
+      <scroll-page id="cardScroll">
       <div id= "card"></div>
-      
-        <button onClick={handleClick}>Generate</button>
-      
+      </scroll-page>       
+          <button onClick={handleClick}>Generate</button>
+      <div id="history">
+        <h2>History</h2>
+      </div>
       <div id="list"></div>
+      </scroll-container>
     </div>
 
     )
