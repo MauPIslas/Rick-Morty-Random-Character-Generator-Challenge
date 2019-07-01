@@ -47,10 +47,12 @@
   }
   #dataCard {
     grid-column: 6/10;
-    justify-content: center;
+    
     display: flex;
     width: 1fr;
+    justify-content: center;
     display: block;
+
     
   }
 }
@@ -77,8 +79,21 @@ scroll-container {
   font-family: Play,sans-serif;
   background-color:rgb(255, 255, 255);
   box-shadow: rgba(136, 152, 170, 0.30) 0px 0px 2rem 0px;
+  padding-left: .5em;
 }
 
+hr{
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: rgb(236, 237, 239);
+  border-image: initial;
+}
+span{
+  font-weight: bold;
+  margin-right: auto;
+  padding-left: 1.5em;
+
+}
 #imgChar {
   box-shadow: rgba(136, 152, 170, 0.30) 0px 0px 2rem 0px;
 }
