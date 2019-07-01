@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/MauPIslas.github.io/Rick-Morty-Random-Character-Generator-Challenge/static/css/main.2b1dd03c.chunk.css",
-    "main.js": "/MauPIslas.github.io/Rick-Morty-Random-Character-Generator-Challenge/static/js/main.bdf42ec4.chunk.js",
-    "main.js.map": "/MauPIslas.github.io/Rick-Morty-Random-Character-Generator-Challenge/static/js/main.bdf42ec4.chunk.js.map",
-    "runtime~main.js": "/MauPIslas.github.io/Rick-Morty-Random-Character-Generator-Challenge/static/js/runtime~main.3010cc47.js",
-    "runtime~main.js.map": "/MauPIslas.github.io/Rick-Morty-Random-Character-Generator-Challenge/static/js/runtime~main.3010cc47.js.map",
-    "static/js/2.f4e981db.chunk.js": "/MauPIslas.github.io/Rick-Morty-Random-Character-Generator-Challenge/static/js/2.f4e981db.chunk.js",
-    "static/js/2.f4e981db.chunk.js.map": "/MauPIslas.github.io/Rick-Morty-Random-Character-Generator-Challenge/static/js/2.f4e981db.chunk.js.map",
-    "index.html": "/MauPIslas.github.io/Rick-Morty-Random-Character-Generator-Challenge/index.html",
-    "precache-manifest.33ce5b94016535e151a339e857208d20.js": "/MauPIslas.github.io/Rick-Morty-Random-Character-Generator-Challenge/precache-manifest.33ce5b94016535e151a339e857208d20.js",
-    "service-worker.js": "/MauPIslas.github.io/Rick-Morty-Random-Character-Generator-Challenge/service-worker.js",
-    "static/css/main.2b1dd03c.chunk.css.map": "/MauPIslas.github.io/Rick-Morty-Random-Character-Generator-Challenge/static/css/main.2b1dd03c.chunk.css.map"
+    "main.css": "/Rick-Morty/static/css/main.2b1dd03c.chunk.css",
+    "main.js": "/Rick-Morty/static/js/main.0d7dbe9a.chunk.js",
+    "main.js.map": "/Rick-Morty/static/js/main.0d7dbe9a.chunk.js.map",
+    "runtime~main.js": "/Rick-Morty/static/js/runtime~main.4d03f7f6.js",
+    "runtime~main.js.map": "/Rick-Morty/static/js/runtime~main.4d03f7f6.js.map",
+    "static/js/2.945711b0.chunk.js": "/Rick-Morty/static/js/2.945711b0.chunk.js",
+    "static/js/2.945711b0.chunk.js.map": "/Rick-Morty/static/js/2.945711b0.chunk.js.map",
+    "index.html": "/Rick-Morty/index.html",
+    "precache-manifest.41e92a9d6bfbdecd930cd4949388612e.js": "/Rick-Morty/precache-manifest.41e92a9d6bfbdecd930cd4949388612e.js",
+    "service-worker.js": "/Rick-Morty/service-worker.js",
+    "static/css/main.2b1dd03c.chunk.css.map": "/Rick-Morty/static/css/main.2b1dd03c.chunk.css.map"
   }
 }
