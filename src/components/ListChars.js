@@ -51,10 +51,13 @@ const ButtonCardHContainer = styled.div`
 `
 
 const Button = styled.button`
-  color: ${props => props.theme.fg};
+  /* color: ${props => props.theme.fg};
   border: solid ${props => props.theme.fg};
-  background: ${props => props.theme.bg};
+  background: ${props => props.theme.bg}; */
 
+  background: ${props => props.primary ? "transparent" : "white"};
+  color: ${props => props.primary ? "rgb(130, 101, 252)" : "palevioletred"};
+  border: solid ${props => props.primary ? "rgb(130, 101, 252)" : "palevioletred"};
   cursor: pointer;
   font-weight: 600;
   font-size: 12px;
@@ -66,16 +69,6 @@ const Button = styled.button`
   margin-bottom: 5em;
 `;
 
-Button.defaultProps = {
-  theme: {
-    main: "palevioletred"
-  }
-}
-
-const theme = {
-  fg: "rgb(130, 101, 252)",
-  bg: "transparent"
-}
 class ListChars extends React.Component{
     render(){
         let chars = this.props.list;
@@ -105,9 +98,7 @@ class ListChars extends React.Component{
             </DataCardHistory>
             <ButtonCardHContainer>
                 <a href="#cardScroll">
-                    <ThemeProvider theme={theme}>
-                      <Button key={char} id={i+1} onClick={()=> handleCLick(i)}>view</Button>
-                    </ThemeProvider>
+                    <Button primary key={char} id={i+1} onClick={()=> handleCLick(i)}>view</Button>
                 </a>
             </ButtonCardHContainer>
         </CardHistory>
