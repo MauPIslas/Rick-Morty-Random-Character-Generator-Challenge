@@ -1,33 +1,3 @@
-.App {
-  /* text-align: center; */
-  display: grid;
-  height: 100px;
-}
-
-
-#message, #messageH{
-  display: flex;
-  justify-content: center;
-  margin: 9em;
-  /* height: 100%; */
-  background-color:rgb(255, 255, 255);
-  /* box-shadow: rgba(136, 152, 170, 0.30) 0px 0px 2rem 0px; */
-
-}
-
-#messageH{
-  margin: 4em;
-}
-
-#history {
-  display: flex;
-  justify-content: center;
-  margin-top: 3em;
-}
-
-#list{
-  margin-bottom: 2em;
-}
 
 #genButton{
   cursor: pointer;
@@ -50,12 +20,6 @@
   background: linear-gradient(135deg, rgb(48, 206, 231), rgb(130, 101, 252));
     
 }
-
-#buttonSpace{
-  margin-left: 5em;
-  margin-right: 5em;
-}
-
 
 .buttonCardH{
   cursor: pointer;

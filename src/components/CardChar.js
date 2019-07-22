@@ -1,6 +1,7 @@
 import React from 'react';
 import { withApollo } from 'react-apollo';
 import ReactDOM from 'react-dom';
+import styled from 'styled-components'
 
 
 import QueryChar from './querys/QueryChar'
@@ -8,8 +9,15 @@ import Card from './Card';
 import ListChars from './ListChars';
 import Message from './Message';
 
-
-
+const ButtonGenContainer = styled.div`
+  margin-left: 5em;
+  margin-right: 5em;
+`
+const History = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+`
 
 let varQ = {"id": 1}
 let characters = [];
@@ -54,17 +62,17 @@ function CardChar({ client }) {
       <div>
         <scroll-container>
           <scroll-page id="cardScroll">
-            <div id="buttonSpace">
+            <ButtonGenContainer>
               <button onClick={handleClick} id="genButton">Generate</button>
-            </div>
+            </ButtonGenContainer>
             <div id="message">
               <Message message="No se ha generado nungún personaje."></Message>
             </div>
             <div id= "card"></div>
           </scroll-page>       
-          <div id="history">
+          <History>
             <h2>History</h2>
-          </div>
+          </History>
           <div id="messageH">
             <Message message="No hay historial."></Message>
           </div>

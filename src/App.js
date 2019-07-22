@@ -54,6 +54,19 @@ span{
   padding-left: 1.5em;
 
 }
+#message, #messageH{
+  display: flex;
+  justify-content: center;
+  margin: 9em;
+}
+#messageH{
+  margin: 4em;
+}
+
+#list{
+  margin-bottom: 2em;
+}
+
 `
 
 function App() {
