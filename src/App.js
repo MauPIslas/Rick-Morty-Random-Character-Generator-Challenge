@@ -5,7 +5,6 @@ import {createGlobalStyle} from 'styled-components';
 
 import Nav from './components/Nav';
 import CardChar from './components/CardChar';
-import './App.css';
 
 const client = new ApolloClient({
   uri: "https://rickandmortyapi.com/graphql"

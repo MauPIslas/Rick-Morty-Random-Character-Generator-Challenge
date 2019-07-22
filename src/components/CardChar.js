@@ -1,7 +1,7 @@
 import React from 'react';
 import { withApollo } from 'react-apollo';
 import ReactDOM from 'react-dom';
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components';
 
 
 import QueryChar from './querys/QueryChar'
@@ -18,6 +18,34 @@ const History = styled.div`
   justify-content: center;
   margin-top: 3em;
 `
+const ButtonGen = styled.button`
+  color: ${props => props.theme.fg};
+  border: solid ${props => props.theme.fg};
+  background: ${props => props.theme.bg};
+
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-left: auto;
+  border-radius: 5px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  padding: 0.875rem 2rem;
+`;
+
+
+const theme = {
+  fg: " rgb(255, 255, 255)",
+  bg: "linear-gradient(135deg, rgb(48, 206, 231), rgb(130, 101, 252))"
+}
 
 let varQ = {"id": 1}
 let characters = [];
@@ -63,7 +91,9 @@ function CardChar({ client }) {
         <scroll-container>
           <scroll-page id="cardScroll">
             <ButtonGenContainer>
-              <button onClick={handleClick} id="genButton">Generate</button>
+            <ThemeProvider theme={theme}>
+              <ButtonGen onClick={handleClick} id="genButton">Generate</ButtonGen>
+            </ThemeProvider>
             </ButtonGenContainer>
             <div id="message">
               <Message message="No se ha generado nungún personaje."></Message>
