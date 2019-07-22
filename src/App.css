@@ -1,111 +1,9 @@
-@media only screen and (max-width: 700px) {
-
-  #cards{
-    margin: .5em;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: .2fr 1fr .2fr;
-  }
-
-  #imgCard{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    justify-content: center;
-    display:flex;
-    width: 1fr;
-  }
-  #imgChar{
-    width: 100%;
-    height: auto;
-    min-width: 300px;
-  }
-  #dataCard {
-    grid-row: 2/3;
-    grid-column: 2/3;
-    width: 1fr;
-    display: block;
-  }
-  
-}
-@media only screen and (min-width: 701px) {
-  #cards {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display: grid;
-    grid-template-columns:  .1fr repeat(4, .5fr) repeat(4,.6fr) .2fr ;
-  }
-  #imgCard{
-    
-    grid-column: 1/6;
-    justify-content: center;
-    display:flex;
-    width: 1fr;
-  }
-  #imgChar{
-    width: auto;
-    height: 100%;
-  }
-  #dataCard {
-    grid-column: 6/10;
-    
-    display: flex;
-    width: 1fr;
-    justify-content: center;
-    display: block;
-
-    
-  }
-  .cardH{
-    display: grid;
-    grid-template-columns: 2fr 4fr 2fr;
-    width: auto;
-    height: 250px;
-    margin: 1em;  
-    background-color:rgb(255, 255, 255);
-    box-shadow: rgba(136, 152, 170, 0.30) 0px 0px 2rem 0px;
-  }
-}
-
 .App {
   /* text-align: center; */
   display: grid;
-  grid-template-rows: 66px 1fr 1fr;
   height: 100px;
 }
-#nav {
-  grid-row: 1/2;
-}
-#main{
-  grid-row: 2/3;
-}
-scroll-container {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
 
-#dataCard  {
-  font-size: 16px;
-  font-family: Play,sans-serif;
-  background-color:rgb(255, 255, 255);
-  box-shadow: rgba(136, 152, 170, 0.30) 0px 0px 2rem 0px;
-  padding-left: .5em;
-}
-
-hr{
-  border-width: 0.5px;
-  border-style: solid;
-  border-color: rgb(236, 237, 239);
-  border-image: initial;
-}
-span{
-  font-weight: bold;
-  margin-right: auto;
-  padding-left: 1.5em;
-
-}
-#imgChar {
-  box-shadow: rgba(136, 152, 170, 0.30) 0px 0px 2rem 0px;
-}
 
 #message, #messageH{
   display: flex;
@@ -159,30 +57,6 @@ span{
 }
 
 
-
-.imgCardH{
-  margin-top: .05em;
-  grid-column: 1/2;
-  width: auto;
-  height: 90%;
-  display: flex;
-  justify-content: center;
-}
-
-.dataCardH{
-  grid-column: 2/3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: 100%;
-  font-size: 25px;
-}
-
-.pCardH{
-  padding-bottom: 2.5em;
-}
-
 .buttonCardH{
   cursor: pointer;
   font-weight: 600;
@@ -196,11 +70,4 @@ span{
   border-width: 1px;
   border-color: rgb(130, 101, 252);
   margin-bottom: 5em;
-}
-
-.buttonCardHContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
 }

@@ -1,7 +1,8 @@
 {
+  "homepage": "https://maupislas.github.io/Rick-Morty-Random-Character-Generator-Challenge/",
   "name": "dev-challenge",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "apollo-boost": "^0.4.3",
     "gh-pages": "^2.0.1",
@@ -37,6 +38,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": "https:///MauPIslas.github.io/Rick-Morty-Random-Character-Generator-Challenge"
+  }
 }

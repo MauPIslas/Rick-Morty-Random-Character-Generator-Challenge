@@ -52,24 +52,24 @@ function CardChar({ client }) {
     return (
       
       <div>
-      <scroll-container>
-      <scroll-page id="cardScroll">
-      <div id="buttonSpace">
-          <button onClick={handleClick} id="genButton">Generate</button>
-      </div>
-      <div id="message">
-        <Message message="No se ha generado nungún personaje."></Message>
-      </div>
-      <div id= "card"></div>
-      </scroll-page>       
-      <div id="history">
-        <h2>History</h2>
-      </div>
-      <div id="messageH">
-        <Message message="No hay historial."></Message>
-      </div>
-      <div id="list"></div>
-      </scroll-container>
+        <scroll-container>
+          <scroll-page id="cardScroll">
+            <div id="buttonSpace">
+              <button onClick={handleClick} id="genButton">Generate</button>
+            </div>
+            <div id="message">
+              <Message message="No se ha generado nungún personaje."></Message>
+            </div>
+            <div id= "card"></div>
+          </scroll-page>       
+          <div id="history">
+            <h2>History</h2>
+          </div>
+          <div id="messageH">
+            <Message message="No hay historial."></Message>
+          </div>
+          <div id="list"></div>
+        </scroll-container>
     </div>
 
     )

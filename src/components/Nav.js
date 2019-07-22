@@ -18,7 +18,6 @@ class Nav extends React.Component {
         return(
             <Barra>
                 <div id="blockdemyContainer">
-
                     <img id="blockdemyIMG" alt="blockdemy"src="https://ernestognw.github.io/rick-and-morty-random/static/media/logo-white.fab45c5f.svg"></img>
                 </div>
             </Barra>
