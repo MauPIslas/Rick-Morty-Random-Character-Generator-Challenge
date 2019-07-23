@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Card from './Card';
-import styled, { ThemeProvider } from 'styled-components';
+import styled from 'styled-components';
 
 
 const CardHistory = styled.div`

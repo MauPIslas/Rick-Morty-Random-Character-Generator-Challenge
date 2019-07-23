@@ -7,7 +7,7 @@ import Nav from './components/Nav';
 import CardChar from './components/CardChar';
 
 const client = new ApolloClient({
-  uri: "https://rickandmortyapi.com/graphql"
+  uri: "http://rickandmorty.blockchainacademy.mx:8000/graphql"
 });
 
 const GlobalStyle = createGlobalStyle`

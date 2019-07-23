@@ -53,12 +53,27 @@ function CardChar({ client }) {
   
     const handleClick= () =>{
     let x = Math.floor((Math.random() * 493) + 1);
-    varQ.id = x;
+    if(x < 100){
+      varQ.id = "5d299c853d1d85c017cc3e" + x;
+    }else{
+      varQ.id = "5d299c853d1d85c017cc3" + x
+    }
     client.query({query: QueryChar, variables: varQ }).then(e => {
         if(e.loading ===  false){
           ReactDOM.render(<h1>Loading...</h1>,document.getElementById('card'));
         }
-        let character = e.data.character;       
+        let character = e.data.character;
+        character.id = x;
+        if(character.origin === null){
+          character.origin = {
+            name: "Unknown"
+          }
+        }
+        if(character.location === null){
+          character.location = {
+            name: "Unknown"
+          }
+        }
         characters.push(character);
     
         if(document.getElementById('message')){
