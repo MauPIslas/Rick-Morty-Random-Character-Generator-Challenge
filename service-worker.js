@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Rick-Morty-Random-Character-Generator-Challenge/precache-manifest.8dabbec401d134ffa3ac266696e07732.js"
+  "/Rick-Morty-Random-Character-Generator-Challenge/precache-manifest.eef6fdcb83928ae889d0ae595d71fc9c.js"
 );
 
 self.addEventListener('message', (event) => {
